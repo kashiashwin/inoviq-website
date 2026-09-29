@@ -2435,10 +2435,18 @@ button {
     display: none;
   }
 
-  /* Hero CTA buttons wrap and center on very small screens */
+  /* Stack all hero CTA buttons vertically, full width — no uneven wrapping */
   .hero-cta-group {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
     justify-content: center;
+    text-align: center;
   }
 }
 
