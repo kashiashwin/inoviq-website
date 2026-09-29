@@ -471,10 +471,39 @@ button {
     align-items: center;
     gap: 2rem;
   }
+
+  /* Center all hero content children */
   .hero-content {
     align-items: center;
     text-align: center;
+    width: 100%;
   }
+
+  /* Pill stays centered */
+  .hero-pill {
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  /* Title full width, centered */
+  .hero-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Description full width, centered */
+  .hero-desc {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Badges row centered */
+  .hero-badges-row {
+    justify-content: center;
+  }
+
+  /* Phone mockup scales down */
   .phone-mockup-frame {
     width: 100%;
     max-width: 280px;
