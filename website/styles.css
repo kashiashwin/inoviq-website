@@ -2422,11 +2422,23 @@ button {
   .mobile-menu-btn {
     display: block;
   }
+
+  /* Keep brand + actions tight with no stray gap */
+  .nav-inner {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 580px) {
   .nav-actions .btn-primary {
     display: none;
+  }
+
+  /* Hero CTA buttons wrap and center on very small screens */
+  .hero-cta-group {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
